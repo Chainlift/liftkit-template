@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "add": "node -e \"const name = process.argv[1]; require('child_process').execSync('npx shadcn add https://liftkit.pages.dev/r/' + name + '.json', { stdio: 'inherit' })\""
   },
   "dependencies": {
     "@material/material-color-utilities": "^0.3.0",
@@ -24,6 +25,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
-    "typescript": "^5"
+    "typescript": "^5",
+    "shadcn": "^2.5.0"
   }
 }
