@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "add": "node -e \"const name = process.argv[1]; require('child_process').execSync('npx shadcn add https://liftkit.pages.dev/r/' + name + '.json', { stdio: 'inherit' })\""
+    "add": "liftkit add"
   },
   "dependencies": {
     "@material/material-color-utilities": "^0.3.0",
@@ -19,13 +19,14 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@chainlift/liftkit": "^0.1.0",
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
-    "typescript": "^5",
-    "shadcn": "^2.5.0"
+    "shadcn": "^2.7.0",
+    "typescript": "^5"
   }
 }
